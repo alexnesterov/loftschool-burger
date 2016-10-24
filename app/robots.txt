@@ -1,0 +1,5 @@
+# www.robotstxt.org/
+
+# Запретить доступ робота к сайту
+User-agent: *
+Disallow: /

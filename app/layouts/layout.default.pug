@@ -1,0 +1,23 @@
+include config
+include mixins
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    if mobile
+      meta(name="viewport", content="width=device-width, initial-scale=1")
+    title #{PageTitle}
+    meta(name="description", content=MetaDesc)
+    meta(name="keywords", content=MetaKeyw)
+    if GoogleFonts
+      link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=" + GoogleFonts, type="text/css")
+    block styles
+      link(rel="stylesheet", href="assets/styles/main.css")
+  body.page
+    block page
+    if js
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+      block scripts
+        script(src="assets/scripts/main.js")

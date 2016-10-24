@@ -1,0 +1,37 @@
+html
+  box-sizing: border-box
+
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
+img
+  max-width: 100%
+  height: auto
+
+html
+  position: relative
+  min-width: 960px
+  min-height: 100%
+
+.page
+  /* Padding bottom by footer height */
+  padding-bottom: $footer-height
+  font-family: 'roboto', Arial, sans-serif
+  font-size: 16px
+  line-height: 1.6
+  color: #333
+  background: #fff
+
+  &__footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    /* Set the fixed height of the footer here */
+    height: $footer-height
+
+.container
+  width: 960px
+  margin: 0 auto
+  padding: 0 10px
