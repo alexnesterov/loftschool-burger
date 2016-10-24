@@ -1,20 +1,22 @@
-# devBoost
-Pug and Sass starter kit.
+# Burger
+Второй выпускной проект с курса Loftschool - "Веб-разработка для начинающих".
 
-## System Preparation
+## Подготовка системы
 
-To use this starter project, you'll need the following things installed on your machine.
+Чтобы собрать данный проект, на вашей машине должно быть установлено следующее:
 
 1. [Git](https://git-scm.com/downloads)
 2. [NodeJS](http://nodejs.org)
 3. [GulpJS](https://github.com/gulpjs/gulp)
 
-## Local Installation
+## Локальное использование
 
-1. Clone this repo, or download it into a directory of your choice.
-2. Inside the directory, run `npm install`.
+1. Клонировать репозиторий или скачать в выбранную Вами папку.
+2. Внутри папки запустить команду в консоли `npm install`.
 
-## Usage
+## Запуск
+
+Следующая команда соберет проект и запустит его на локальном сервере.
 
 ```shell
 $ gulp
