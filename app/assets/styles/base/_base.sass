@@ -1,0 +1,71 @@
+html
+  box-sizing: border-box
+
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
+img
+  max-width: 100%
+  height: auto
+
+html
+  position: relative
+  min-width: 960px
+  min-height: 100%
+
+.page
+  font-family: 'ubuntu-light', Arial, sans-serif
+  font-size: 16px
+  line-height: 1.6
+  color: $foreground-color
+  background: $background-color
+
+.wrapper
+  overflow: hidden
+
+.container
+  width: 960px
+  margin: 0 auto
+  padding: 0 10px
+  +clearfix
+
+.section
+  height: 100vh
+  min-height: 650px
+
+.section-title
+  font-family: 'gagalin', Arial, sans-serif
+  font-size: 72px
+  line-height: 1
+  color: $accent-color
+
+  &--black
+    color: $foreground-color
+
+  &--white
+    color: #fff
+
+// Buttons
+.btn
+  display: inline-block
+  padding: 0 14px
+  font-family: 'ubuntu-medium', Arial, sans-serif
+  font-size: 13px
+  line-height: 35px
+  text-decoration: none
+  color: #fff
+  text-transform: uppercase
+  background: $primary-color
+  border-radius: 5px
+  transition: background-color .2s ease-out
+
+  &:hover
+    background: $primary-color--dark
+
+  &--black
+    background: $foreground-color
+
+    &:hover
+      background: darken($foreground-color, 6%)

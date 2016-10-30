@@ -1,0 +1,61 @@
+.reviews
+
+  &__list
+    height: 100%
+    margin: 0
+    padding: 0
+    list-style: none
+    +clearfix
+
+  &__item
+    float: left
+    width: 25%
+    height: 50%
+    overflow: hidden
+
+.review
+  width: 100%
+  height: 100%
+  position: relative
+
+  &:hover
+    .review__hover
+      transform: scale(1)
+      opacity: 1
+
+  &__pic
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    filter: grayscale(100%)
+
+  &__hover
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    padding: 14% 8% 0
+    background: rgba(#141414, .7)
+    transform: scale(.9)
+    opacity: 0
+    transition: .2s ease-out
+
+  &__name
+    margin-bottom: 25px
+    font-family: 'gagalin', Arial, sans-serif
+    font-size: 14px
+    line-height: 1
+    color: #fff
+
+  &__text
+    margin-bottom: 10px
+    font-family: 'ubuntu-light', Arial, sans-serif
+    font-size: 14px
+    line-height: 24px
+    color: #fff

@@ -1,0 +1,91 @@
+.team
+  position: relative
+  background: url(../images/team_bg.jpg) no-repeat top center
+  background-size: cover
+
+  &__right
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    width: 50%
+    background: rgba($foreground-color, .93)
+
+  &__block
+    position: absolute
+    top: 50%
+    right: 0
+    left: 0
+    padding-left: 80px
+    transform: translateY(-50%)
+
+  &__title
+    margin-bottom: 70px
+
+  &__accord
+    margin: 0
+    padding: 0
+    list-style: none
+
+  &__item
+    margin-bottom: 30px
+
+    &.is-active .team__info
+      display: block
+
+    &.is-active .team__link
+      color: $accent-color
+
+    &.is-active .team__link:before
+      transform: rotate(-180deg)
+
+  &__link
+    display: inline-block
+    font-family: 'gagalin', Arial, sans-serif
+    font-size: 14px
+    color: #fff
+    text-decoration: none
+    transition: .2s ease-out
+
+    &:before
+      content: ''
+      display: inline-block
+      vertical-align: baseline
+      width: 0
+      height: 0
+      margin-right: 8px
+      border-style: solid
+      border-width: 7px 5px 0 5px
+      border-color: $accent-color transparent transparent transparent
+      transition: .2s ease-out
+
+  &__info
+    display: none
+    padding-top: 15px
+    +clearfix
+
+  &__pic
+    float: left
+    width: 100px
+    height: 100px
+    margin: 0 20px
+    border-radius: 50%
+    overflow: hidden
+
+  &__img
+    max-width: 100%
+    max-height: 100%
+
+  &__text
+    float: left
+    width: 240px
+    font-size: 14px
+    line-height: 24px
+    color: #fff
+
+  &__head
+    margin-bottom: 8px
+    font-family: 'ubuntu-bold', Arial, sans-serif
+
+  &__content
+    font-family: 'ubuntu-light', Arial, sans-serif

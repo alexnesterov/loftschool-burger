@@ -1,0 +1,25 @@
+.section.hello
+  .container
+    .header
+      .header__logo
+        a.logo(href="#", title="На главную")
+          include ../assets/images/icons/logo.svg
+      .header__nav
+        nav.nav
+          ul.nav__list
+            li.nav__item: a.nav__link(href="#", title="") О нас
+            li.nav__item: a.nav__link(href="#", title="") Бургеры
+            li.nav__item: a.nav__link(href="#", title="") Команда
+            li.nav__item: a.nav__link(href="#", title="") Меню
+            li.nav__item: a.nav__link(href="#", title="") Отзывы
+            li.nav__item: a.nav__link(href="#", title="") Контакты
+            li.nav__item: a.nav__link.btn(href="#", title="") Заказать
+    .hello__inner
+      .container
+        .hello__left
+          img.hello__img(src="assets/images/hello_burger.png", alt="Burger")
+        .hello__right
+          .section-title.hello__title Мы делаем
+          .hello__desc Натуральные бургеры
+  a.arrow-down(href="#", title="")
+    include ../assets/images/icons/arrow-scroll.svg

@@ -1,4 +1,24 @@
 extends layouts/layout.default.pug
 
 block page
-  
+  .wrapper
+    include includes/hello.pug
+    include includes/best.pug
+    include includes/burgers.pug
+    include includes/team.pug
+    include includes/menu.pug
+    include includes/reviews.pug
+
+    .section.order
+
+    include includes/map.pug
+
+  ul.fixed-menu
+    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
+    li.fixed-menu__item.is-active: a.fixed-menu__link(href="#", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")

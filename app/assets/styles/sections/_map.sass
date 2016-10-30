@@ -1,0 +1,68 @@
+.map
+  position: relative
+
+.yandex-map
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  bottom: 60px
+  background: #aaaaaa
+
+.footer
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  height: 60px
+  background: url(../images/footer_bg.jpg) no-repeat center
+  background-size: cover
+
+  &__left
+    float: left
+
+  &__right
+    float: right
+    padding-top: 20px
+
+  &__addr
+    padding-top: 8px
+    font-family: 'ubuntu-light', Arial, sans-serif
+    font-size: 14px
+    line-height: 24px
+    color: #fff
+
+  &__phone
+    font-family: 'ubuntu-bold', Arial, sans-serif
+    font-size: 14px
+    line-height: 24px
+    color: $primary-color
+
+    svg
+      margin-right: 3px
+
+    svg path
+      fill: $primary-color
+
+.social
+  margin: 0
+  padding: 0
+  list-style: none
+
+  &__item
+    display: inline-block
+    margin-left: 18px
+
+  &__link
+    display: inline-block
+    width: 20px
+    height: 20px
+    opacity: .3
+    transition: opacity .2s ease-out
+
+    &:hover
+      opacity: 1
+
+    svg
+      width: 100%
+      height: 100%
