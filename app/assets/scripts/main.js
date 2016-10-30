@@ -1,6 +1,6 @@
+// Slider
 $(function(){
 
-// Slider
   $('.slider__wrap').owlCarousel({
     slideSpeed : 800,
     paginationSpeed : 400,
@@ -19,5 +19,4 @@ $(function(){
     slider.next();
   });
 
-  console.log('OK!');
 });
