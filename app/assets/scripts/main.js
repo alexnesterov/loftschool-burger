@@ -4,7 +4,6 @@ $(function(){
   $('#fullpage').fullpage({
     verticalCentered: false,
     onLeave: function(index, nextIndex, direction) {
-      console.log(nextIndex);
       $('.fixed-menu__item').eq(nextIndex - 1).addClass('is-active')
         .siblings()
         .removeClass('is-active');
