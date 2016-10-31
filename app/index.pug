@@ -2,21 +2,22 @@ extends layouts/layout.default.pug
 
 block page
   .wrapper
-    include includes/hello.pug
-    include includes/best.pug
-    include includes/burgers.pug
-    include includes/team.pug
-    include includes/menu.pug
-    include includes/reviews.pug
-    include includes/order.pug
-    include includes/map.pug
+    #fullpage
+      include includes/hello.pug
+      include includes/best.pug
+      include includes/burgers.pug
+      include includes/team.pug
+      include includes/menu.pug
+      include includes/reviews.pug
+      include includes/order.pug
+      include includes/map.pug
 
   ul.fixed-menu
-    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
-    li.fixed-menu__item.is-active: a.fixed-menu__link(href="#", title="")
-    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
-    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
-    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
-    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
-    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
-    li.fixed-menu__item: a.fixed-menu__link(href="#", title="")
+    li.fixed-menu__item.is-active: a.fixed-menu__link(href="1", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="2", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="3", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="4", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="5", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="6", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="7", title="")
+    li.fixed-menu__item: a.fixed-menu__link(href="8", title="")
