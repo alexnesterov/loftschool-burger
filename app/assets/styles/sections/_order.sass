@@ -1,0 +1,153 @@
+.order
+  position: relative
+  background: url(../images/order_bg.jpg) no-repeat center
+  background-size: cover
+
+  &__inner
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    transform: translateY(-50%)
+
+  &__title
+    margin-bottom: 72px
+    text-align: center
+
+.form
+  margin-left: -20px
+  +clearfix
+
+  &__col
+    float: left
+    width: 50%
+    padding-left: 20px
+
+  &__row
+    margin-left: -20px
+    margin-bottom: 14px
+    +clearfix
+
+  &__item
+    width: 100%
+    padding-left: 20px
+
+    &._col-2
+      float: left
+      width: 50%
+
+    &._col-4
+      float: left
+      width: 25%
+
+  &__radio
+    position: absolute
+    left: -9999px
+
+    &:checked + label:after
+      width: 7px
+      height: 7px
+      margin-top: -4px
+      margin-left: -3px
+      opacity: 1
+
+  &__check
+    position: absolute
+    left: -9999px
+
+    &:checked + label:after
+      width: 11px
+      height: 9px
+
+  &__label
+    margin-bottom: 2px
+    font-family: 'ubuntu-light', Arial, sans-serif
+    font-size: 14px
+    line-height: 24px
+    color: #fff
+
+    &._radio
+      position: relative
+      display: inline-block
+      margin-bottom: 0
+      margin-right: 15px
+      margin-top: -17px
+      vertical-align: middle
+      cursor: pointer
+
+      &:before
+        content: ''
+        position: relative
+        top: -1px
+        display: inline-block
+        margin-right: 10px
+        vertical-align: middle
+        width: 15px
+        height: 15px
+        background: #fff
+        border-radius: 50%
+
+      &:after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 7.5px
+        z-index: 1
+        display: block
+        width: 0
+        height: 0
+        border-radius: 50%
+        background: $primary-color
+        transition: .2s ease-out
+
+    &._check
+      position: relative
+      display: inline-block
+      margin-bottom: 0
+      margin-right: 20px
+      margin-top: -12px
+      vertical-align: middle
+      cursor: pointer
+
+      &:before
+        content: ''
+        position: relative
+        top: -1px
+        display: inline-block
+        margin-right: 10px
+        vertical-align: middle
+        width: 15px
+        height: 15px
+        background: #fff
+
+      &:after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 7.5px
+        display: block
+        width: 0
+        height: 0
+        background: url(../images/icons/check.svg) no-repeat center
+        background-size: contain
+        transform: translate(-50%, -50%)
+        transition: .2s ease-out
+
+  &__input
+    width: 100%
+    height: 35px
+    padding: 0 10px
+    background: #fff
+    border: 1px solid #d1cfcb
+    border-radius: 4px
+    &:focus
+      outline: none
+      border: 2px solid $accent-color
+
+    &._t-area
+      height: 110px
+      resize: none
+
+  &__btn
+    margin-top: -5px
+    margin-right: 5px

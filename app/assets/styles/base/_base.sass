@@ -19,8 +19,10 @@ html
   font-family: 'ubuntu-light', Arial, sans-serif
   font-size: 16px
   line-height: 1.6
+  -webkit-font-smoothing: antialiased
   color: $foreground-color
   background: $background-color
+
 
 .wrapper
   overflow: hidden
@@ -58,8 +60,11 @@ html
   color: #fff
   text-transform: uppercase
   background: $primary-color
+  border: none
   border-radius: 5px
   transition: background-color .2s ease-out
+  &:focus
+    outline: none
 
   &:hover
     background: $primary-color--dark
@@ -69,3 +74,12 @@ html
 
     &:hover
       background: darken($foreground-color, 6%)
+
+  &--clear
+    font-family: 'ubuntu-light', Arial, sans-serif
+    font-size: 14px
+    background: transparent
+    text-transform: none
+
+    &:hover
+      background: transparent
