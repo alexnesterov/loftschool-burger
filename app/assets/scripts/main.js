@@ -111,3 +111,8 @@ $(function() {
   });
 
 });
+
+// Input Mask
+$(function() {
+  $('#phone-mask').inputmask("+7 (999) 99 99 99");
+});
