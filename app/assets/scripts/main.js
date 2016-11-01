@@ -81,3 +81,33 @@ $(function() {
   });
 
 });
+
+// Horisontal Accordeon
+$(function() {
+
+  $('.menu-accord__trigger').on('click', function(event) {
+    event.preventDefault();
+
+    var $this = $(this),
+        item = $this.closest('.menu-accord__item');
+
+    if (!item.hasClass('is-active')) {
+      item.addClass('is-active')
+        .siblings()
+        .removeClass('is-active');
+    }
+    else {
+      item.removeClass('is-active');
+    }
+  });
+
+  $(document).on('click', function(event) {
+    var menu = $(event.target).closest('.menu-accord'),
+        items = $('.menu-accord__item');
+
+    if (!menu.length) {
+      items.removeClass('is-active');
+    }
+  });
+
+});
