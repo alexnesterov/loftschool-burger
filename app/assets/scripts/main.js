@@ -1,5 +1,5 @@
 // One Page Scroll
-$(function(){
+$(function() {
 
   $('#fullpage').fullpage({
     verticalCentered: false,
@@ -31,7 +31,7 @@ $(function(){
 });
 
 // Slider
-$(function(){
+$(function() {
 
   $('.slider__wrap').owlCarousel({
     slideSpeed : 800,
@@ -49,6 +49,35 @@ $(function(){
   $('.slider__r-arrow').on('click', function(e) {
     e.preventDefault();
     slider.next();
+  });
+
+});
+
+// Vertical Accordeon
+$(function() {
+
+  $('.team__link').on('click', function(e) {
+    e.preventDefault();
+
+    var $this = $(this),
+        item = $this.closest('.team__item'),
+        container = $this.closest('.team__accord'),
+        items = container.find('.team__item'),
+        content = item.find('.team__info'),
+        otherContent = container.find('.team__info'),
+        contentHeight = content.find('.team__info-wrap').outerHeight();
+
+    if (item.hasClass('is-active')) {
+      item.removeClass('is-active');
+      content.height(0);
+    }
+    else {
+      item.addClass('is-active')
+        .siblings()
+        .removeClass('is-active');
+      otherContent.height(0);
+      content.height(contentHeight);
+    }
   });
 
 });
