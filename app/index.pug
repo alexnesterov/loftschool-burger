@@ -2,6 +2,10 @@ extends layouts/layout.default.pug
 
 block page
   .wrapper
+    .bg-video
+      video.video(width="100%", height="auto", autoplay="autoplay", loop="loop", preload="auto")
+        source(src="assets/images/vid/burger_video.mp4")
+        source(src="assets/images/vid/burger_video.webm")
     #fullpage
       include includes/hello.pug
       include includes/best.pug
