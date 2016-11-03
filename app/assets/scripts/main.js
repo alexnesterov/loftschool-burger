@@ -116,3 +116,20 @@ $(function() {
 $(function() {
   $('#phone-mask').inputmask("+7 (999) 99 99 99");
 });
+
+// Fancybox
+$(function() {
+  $(".fancybox").fancybox({
+    width: 460,
+    height: 'auto',
+    padding: 0,
+    fitToView: false,
+    autoSize: false,
+    closeBtn: false
+  });
+
+  $('.review-tv__close').on('click', function(e){
+    e.preventDefault();
+    $.fancybox.close();
+  });
+});
