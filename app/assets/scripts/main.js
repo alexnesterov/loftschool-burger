@@ -133,3 +133,39 @@ $(function() {
     $.fancybox.close();
   });
 });
+
+// Ajax form
+$('#form-order').on('submit', function(event) {
+  event.preventDefault();
+
+  var form = $(this);
+      formData = form.serialize();
+
+  $.ajax({
+    url: 'mail.php',
+    type: 'POST',
+    data: formData
+  })
+  .done(function(data) {
+
+    var popup = data.status ? '#order-success' : '#order-error';
+
+    $.fancybox.open({href: popup}, {
+      width: 200,
+      height: 'auto',
+      padding: 0,
+      fitToView: false,
+      autoSize: false,
+      closeBtn: false,
+      afterClose: function() {
+        form.trigger('reset');
+      }
+    });
+  });
+
+  $('.order-tv__close').on('click', function(event) {
+    event.preventDefault();
+    $.fancybox.close();
+  });
+
+});

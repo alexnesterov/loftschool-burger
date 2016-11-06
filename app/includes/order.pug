@@ -3,7 +3,7 @@
     .container
       .order__title.section-title Закажите доставку
       .order__form
-        form.form(action="#", method="POST")
+        form#form-order.form(action="#", method="POST")
           .form__col
             .form__row
               .form__item._col-2
@@ -33,7 +33,7 @@
             .form__row
               .form__item
                 .form__label Комментарий
-                textarea.form__input._t-area(name="street")
+                textarea.form__input._t-area(name="comment")
             .form__row
               .form__item
                 input.form__radio(id="pay1", type="radio", name="payment", checked)
